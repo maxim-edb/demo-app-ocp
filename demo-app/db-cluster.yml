@@ -20,3 +20,9 @@ spec:
   storage:
     resizeInUseVolumes: true
     size: 1Gi
+  postgresql:
+    parameters:
+      "pgaudit.log": "all, -misc"
+      "pgaudit.log_catalog": "off"
+      "pgaudit.log_parameter": "on"
+      "pgaudit.log_relation": "on"
