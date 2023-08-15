@@ -1,0 +1,17 @@
+apiVersion: clusters.postgresql.k8s.enterprisedb.io/v1
+kind: Cluster
+metadata:
+  name: db-cluster-demo
+  namespace: demo-app
+spec:
+  affinity:
+    podAntiAffinityType: preferred
+  bootstrap:
+    initdb:
+      database: demo
+      encoding: UTF8
+      localeCType: C
+      localeCollate: C
+      owner: app
+  enableSuperuserAccess: true
+  instances: 2
