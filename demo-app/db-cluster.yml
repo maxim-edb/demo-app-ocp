@@ -20,6 +20,7 @@ spec:
   storage:
     resizeInUseVolumes: true
     size: 1Gi
+  primaryUpdateMethod: switchover
   postgresql:
     parameters:
       "pgaudit.log": "all, -misc"
