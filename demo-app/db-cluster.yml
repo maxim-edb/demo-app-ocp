@@ -15,3 +15,6 @@ spec:
       owner: app
   enableSuperuserAccess: true
   instances: 2
+  storage:
+    resizeInUseVolumes: true
+    size: 1Gi
