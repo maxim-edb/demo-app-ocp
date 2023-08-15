@@ -6,7 +6,6 @@ metadata:
 spec:
   cluster:
     name: db-cluster-demo
-
   instances: 1
   type: ro
   pgbouncer:
