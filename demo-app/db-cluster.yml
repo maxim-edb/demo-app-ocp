@@ -14,7 +14,7 @@ spec:
       localeCollate: C
       owner: app
   enableSuperuserAccess: true
-  instances: 2
+  instances: 3
   monitoring:
     enablePodMonitor: true
   storage:
