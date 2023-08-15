@@ -2,6 +2,7 @@ apiVersion: postgresql.k8s.enterprisedb.io/v1
 kind: Pooler
 metadata:
   name: pooler-example-ro
+  namespace: demo-app
 spec:
   cluster:
     name: db-cluster-demo
